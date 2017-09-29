@@ -181,7 +181,7 @@ public class SpeedyTiltShift {
         int[] outpixels = nativeTiltShift(pixels, width, height, a0, a1, a2, a3, s_far, s_near);
         Bitmap out = in.copy(in.getConfig(), true);
         out.setPixels(outpixels, 0, width, 0, 0, width, height);
-        return in;
+        return out;
     }
     public static Bitmap tiltshift_neon(Bitmap in, int a0, int a1, int a2, int a3, float s_far, float s_near){
         return in;
