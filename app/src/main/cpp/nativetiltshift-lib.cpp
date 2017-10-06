@@ -2,6 +2,7 @@
 #include <string>
 #include <math.h>
 #include <arm_neon.h>
+
 using namespace std;
 
 extern "C" {

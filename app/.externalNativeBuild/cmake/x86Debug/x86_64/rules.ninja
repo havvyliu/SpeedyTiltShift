@@ -42,7 +42,7 @@ rule CXX_SHARED_LIBRARY_LINKER__nativetiltshift-lib
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app -B/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64
+  command = /Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app -B/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64
   description = Re-running CMake...
   generator = 1
 

@@ -1,9 +1,12 @@
 
 {
-	"buildFiles" : [ "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/CMakeLists.txt" ],
+	"buildFiles" : 
+	[
+		"/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/CMakeLists.txt"
+	],
 	"cleanCommands" : 
 	[
-		"/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64 --target clean"
+		"/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64 --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -12,18 +15,26 @@
 		{
 			"abi" : "x86_64",
 			"artifactName" : "nativetiltshift-lib",
-			"buildCommand" : "/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64 --target nativetiltshift-lib",
+			"buildCommand" : "/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64 --target nativetiltshift-lib",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/jay/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/jay/Library/Android/sdk/ndk-bundle/sysroot  -Dnativetiltshift_lib_EXPORTS -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/src/main/cpp/nativetiltshift-lib.cpp",
-					"workingDirectory" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64"
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/jay/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/jay/Library/Android/sdk/ndk-bundle/sysroot  -Dnativetiltshift_lib_EXPORTS -I../../../../../../../../Ne10/inc -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/src/main/cpp/nativetiltshift-lib.cpp",
+					"workingDirectory" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Debug/x86_64"
 				}
 			],
-			"output" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/build/intermediates/cmake/x86/debug/obj/x86_64/libnativetiltshift-lib.so",
+			"output" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/cmake/x86/debug/obj/x86_64/libnativetiltshift-lib.so",
+			"toolchain" : "17071660160081609275"
+		},
+		"ne10-lib-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "ne10-lib",
+			"buildType" : "debug",
+			"output" : "../../../../Ne10/build/modules/libNE10.a",
 			"toolchain" : "17071660160081609275"
 		}
 	},

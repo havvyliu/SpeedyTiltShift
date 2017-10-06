@@ -1,9 +1,12 @@
 
 {
-	"buildFiles" : [ "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/CMakeLists.txt" ],
+	"buildFiles" : 
+	[
+		"/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/CMakeLists.txt"
+	],
 	"cleanCommands" : 
 	[
-		"/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a --target clean"
+		"/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -12,18 +15,26 @@
 		{
 			"abi" : "armeabi-v7a",
 			"artifactName" : "nativetiltshift-lib",
-			"buildCommand" : "/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a --target nativetiltshift-lib",
+			"buildCommand" : "/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a --target nativetiltshift-lib",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/jay/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/jay/Library/Android/sdk/ndk-bundle/sysroot  -Dnativetiltshift_lib_EXPORTS -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/src/main/cpp/nativetiltshift-lib.cpp",
-					"workingDirectory" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a"
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/Users/jay/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/jay/Library/Android/sdk/ndk-bundle/sysroot  -Dnativetiltshift_lib_EXPORTS -I../../../../../../../../Ne10/inc -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/src/main/cpp/nativetiltshift-lib.cpp",
+					"workingDirectory" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/arm7Debug/armeabi-v7a"
 				}
 			],
-			"output" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/build/intermediates/cmake/arm7/debug/obj/armeabi-v7a/libnativetiltshift-lib.so",
+			"output" : "/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/cmake/arm7/debug/obj/armeabi-v7a/libnativetiltshift-lib.so",
+			"toolchain" : "17071660160081609275"
+		},
+		"ne10-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "ne10-lib",
+			"buildType" : "debug",
+			"output" : "../../../../Ne10/build/modules/libNE10.a",
 			"toolchain" : "17071660160081609275"
 		}
 	},

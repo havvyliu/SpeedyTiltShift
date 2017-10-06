@@ -6,6 +6,7 @@ import android.util.Log;
 
 /**
  * Created by roblkw on 7/26/17.
+ * Modified by Jay
  */
 
 public class SpeedyTiltShift {
@@ -76,18 +77,18 @@ public class SpeedyTiltShift {
 
     public static int Weight_matrix_through_vector (int r, int y, int x, int[] pixels, int width, float sigma, int height, boolean first) {
         int p_new = 0;
-        int p_BB = p_new & 0xff;
-        int p_GG = (p_new<<8) & 0xff;
-        int p_RR = (p_new<<16) & 0xff;
-        int p_AA = (p_new<<24) & 0xff;
+        float p_BB = p_new & 0xff;
+        float p_GG = (p_new<<8) & 0xff;
+        float p_RR = (p_new<<16) & 0xff;
+        float p_AA = (p_new<<24) & 0xff;
         if(first) {
             for (int i = r * (-1); i <= r; i++) {
                 float gau = GaussianVector[Math.abs(i)];
                 int p = getPoint(x, y+i, pixels, width, height);
-                int BB = p & 0xff;
-                int GG = (p << 8) & 0xff;
-                int RR = (p << 16) & 0xff;
-                int AA = (p << 24) & 0xff;
+                float AA = (p << 24) & 0xff;
+                float RR = (p << 16) & 0xff;
+                float GG = (p << 8) & 0xff;
+                float BB = p & 0xff;
                 p_BB += BB * gau;
                 p_GG += GG * gau;
                 p_RR += RR * gau;
@@ -108,7 +109,11 @@ public class SpeedyTiltShift {
                 p_AA += AA * gau;
             }
         }
-        p_new = (p_AA & 0xff) << 24 | (p_RR & 0xff) << 16 | (p_GG & 0xff) << 8 | (p_BB & 0xff);
+        int p_AA_int = (int) p_AA;
+        int p_RR_int = (int) p_RR;
+        int p_GG_int = (int) p_GG;
+        int p_BB_int = (int) p_BB;
+        p_new = (p_AA_int & 0xff) << 24 | (p_RR_int & 0xff) << 16 | (p_GG_int & 0xff) << 8 | (p_BB_int & 0xff);
         return p_new;
     }
 

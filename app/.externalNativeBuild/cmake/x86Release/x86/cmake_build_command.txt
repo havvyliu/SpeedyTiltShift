@@ -1,11 +1,11 @@
 Executable : /Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
--H/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app
--B/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Release/x86
+-H/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app
+-B/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/.externalNativeBuild/cmake/x86Release/x86
 -GAndroid Gradle - Ninja
 -DANDROID_ABI=x86
 -DANDROID_NDK=/Users/jay/Library/Android/sdk/ndk-bundle
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/jay/AndroidStudioProjects/SpeedyTiltShift/app/build/intermediates/cmake/x86/release/obj/x86
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/cmake/x86/release/obj/x86
 -DCMAKE_BUILD_TYPE=Release
 -DCMAKE_MAKE_PROGRAM=/Users/jay/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
 -DCMAKE_TOOLCHAIN_FILE=/Users/jay/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
