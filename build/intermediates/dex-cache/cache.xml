@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/incremental-classes/arm7/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bb6f89eb411df0a00470f90815441836ed55eda8">
+        <dex dex="/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/transforms/dex/arm7/debug/folders/1000/10000/instant-run-bootstrap_40646a32bf18faa7608d66427115e7aef4b73405/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/incremental-runtime-classes/arm7/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/build/intermediates/transforms/dex/arm7/debug/folders/1000/10000/instant-run_c9b61fa087d3260c253380161c99f0f661cdad53/classes.dex" />
+    </item>
+
+</items>

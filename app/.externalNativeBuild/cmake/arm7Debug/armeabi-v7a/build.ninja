@@ -52,9 +52,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Object build statements for SHARED_LIBRARY target nativetiltshift-lib
 
 build CMakeFiles/nativetiltshift-lib.dir/src/main/cpp/nativetiltshift-lib.cpp.o: CXX_COMPILER__nativetiltshift-lib ../../../../src/main/cpp/nativetiltshift-lib.cpp
-  DEFINES = -Dnativetiltshift_lib_EXPORTS
+  DEFINES = -DHAVE_NEON=1 -Dnativetiltshift_lib_EXPORTS
   DEP_FILE = CMakeFiles/nativetiltshift-lib.dir/src/main/cpp/nativetiltshift-lib.cpp.o.d
-  FLAGS = -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
+  FLAGS = -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=23 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -mfpu=neon -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -mfpu=neon
   INCLUDES = -I../../../../../../../../Ne10/inc -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /Users/jay/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /Users/jay/AndroidStudioProjects/SpeedyTiltShift/SpeedyTiltShift/app/src/main/cpp/nativetiltshift-lib.cpp
   OBJECT_DIR = CMakeFiles/nativetiltshift-lib.dir

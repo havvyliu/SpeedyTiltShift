@@ -53,3 +53,23 @@ set_target_properties( ne10-lib PROPERTIES IMPORTED_LOCATION
 include_directories( ../../../../Ne10/inc )
 
 
+if (${ANDROID_ABI} STREQUAL "armeabi-v7a")
+  # make a list of neon files and add neon compiling flags to them
+  set(neon_SRCS src/main/cpp/nativetiltshift-lib.cpp)
+
+  set_property(SOURCE ${neon_SRCS}
+               APPEND_STRING PROPERTY COMPILE_FLAGS " -mfpu=neon")
+  add_definitions("-DHAVE_NEON=1")
+elseif (${ANDROID_ABI} STREQUAL "x86")
+    set(neon_SRCS src/main/cpp/nativetiltshift-lib.cpp)
+    set_property(SOURCE ${neon_SRCS} APPEND_STRING PROPERTY COMPILE_FLAGS
+        " -mssse3  -Wno-unknown-attributes \
+                   -Wno-deprecated-declarations \
+                   -Wno-constant-conversion \
+                   -Wno-static-in-inline")
+    add_definitions(-DHAVE_NEON_X86=1 -DHAVE_NEON=1)
+else ()
+  set(neon_SRCS)
+endif ()
+
+
